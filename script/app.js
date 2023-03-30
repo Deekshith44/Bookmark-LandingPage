@@ -1,23 +1,21 @@
-const faqs=document.querySelectorAll(".faq");
+const faqs = document.querySelectorAll(".faq");
 
-faqs.forEach((faq)=>{
-    faq.addEventListener("click",()=>{
-        faq.classList.toggle("active");
-    });
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
 });
 
+const bookmarkHead = document.getElementById("first");
+const intelligentHead = document.getElementById("second");
+const shareHead = document.getElementById("third");
+const intelligentAdd = document.getElementById("book");
 
-
-const bookmarkHead=document.getElementById("first");
-const intelligentHead= document.getElementById("second");
-const shareHead= document.getElementById("third");
-const intelligentAdd=document.getElementById("book");
-
-intelligentHead.addEventListener(("click"),()=>{
-    intelligentAdd.innerHTML=`
+intelligentHead.addEventListener("click", () => {
+  intelligentAdd.innerHTML = `
             <div class="img-section2">
                    <div class="intelligent-container">
-                       <img src="../illustration-features-tab-2.svg">
+                       <img src="./assets/Images/illustration-features-tab-2.svg">
                    </div>
 
                    <div class="tablet-container3">
@@ -37,12 +35,11 @@ intelligentHead.addEventListener(("click"),()=>{
     `;
 });
 
-shareHead.addEventListener(("click"),()=>
-{
-    console.log("hi");
-    intelligentAdd.innerHTML=`  <div class="img-section3">
+shareHead.addEventListener("click", () => {
+  console.log("hi");
+  intelligentAdd.innerHTML = `  <div class="img-section3">
     <div class="shareBook-container">
-        <img src="../illustration-features-tab-3.svg">
+        <img src="./assets/Images/illustration-features-tab-3.svg"/>
     </div>
 
     <div class="tablet-container4">
@@ -61,11 +58,10 @@ shareHead.addEventListener(("click"),()=>
  </div>`;
 });
 
-bookmarkHead.addEventListener(("click"),()=>
-{
-    intelligentAdd.innerHTML=` <div class="img-section1">
+bookmarkHead.addEventListener("click", () => {
+  intelligentAdd.innerHTML = ` <div class="img-section1">
     <div class="bookmarkImg-container">
-        <img src="../illustration-features-tab-1.svg">
+        <img src="./assets/Images/illustration-features-tab-1.svg">
     </div>
 
     <div class="tablet-container2">
@@ -84,8 +80,4 @@ bookmarkHead.addEventListener(("click"),()=>
     </div>
      </p>
  </div>  `;
-})
-
-
-
-
+});
